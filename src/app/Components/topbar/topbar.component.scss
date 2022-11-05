@@ -1,0 +1,120 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "Chapaza";
+  src: local("Chapaza"), url(../topbar/Chapaza.ttf) format("truetype");
+}
+
+.top-bar {
+  position: relative;
+  height: 90px;
+  background: #ffffff;
+  padding-top: 20px;
+
+  a {
+    text-decoration: #000000;
+  }
+
+  .logo {
+    padding: 15px 0px;
+    text-align: left;
+    text-overflow: ellipsis;
+    padding-top: 15px;
+
+    h1 {
+      margin: 0;
+      color: #F1C855;
+      font-size: 24px;
+      line-height: 55px;
+      font-weight: 800;
+      font-family: "Chapaza", 'Roboto';
+
+    }
+  }
+
+  &:hover .logo:hover h1:hover {
+    text-decoration: #000000;
+  }
+
+  .logo img {
+    max-width: 100%;
+    max-height: 60px;
+  }
+
+  .top-bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90px;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+    h2 {
+      color: #000000;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    p {
+      color: #000000;
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+
+  .social {
+    display: flex;
+    height: 90px;
+    font-size: 0;
+    justify-content: flex-end;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 100%;
+      font-size: 22px;
+      color: #000000;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+
+      &:first-child {
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      &:hover {
+        color: #F1C855;
+        background: #000000;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .top-bar {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .top-bar {
+    .logo {
+      text-align: center;
+    }
+
+    .social {
+      display: none;
+    }
+  }
+}

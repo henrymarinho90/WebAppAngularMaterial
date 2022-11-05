@@ -1,0 +1,67 @@
+/*GlobalCSS*/
+
+body {
+  color: #666666;
+  background: #ffffff;
+  font-family: 'GeosansLight', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chapaza', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #121518;
+}
+
+a {
+  color: #454545;
+  transition: .3s;
+
+  &:hover, &:active, &:focus {
+    color: #F1C855;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #F1C855;
+  color: #121518;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 9;
+
+  &:hover {
+    color: #F1C855;
+    background: #121518;
+  }
+
+  i {
+    padding-top: 10px;
+  }
+}
+app-topbar{
+  margin-bottom: 25px;
+
+}
