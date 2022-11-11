@@ -10,9 +10,12 @@
   height: 90px;
   background: #ffffff;
   padding-top: 20px;
+  width: 100% auto;
+
 
   a {
     text-decoration: #000000;
+    text-align: center;
   }
 
   .logo {
@@ -20,6 +23,7 @@
     text-align: left;
     text-overflow: ellipsis;
     padding-top: 15px;
+
 
     h1 {
       margin: 0;

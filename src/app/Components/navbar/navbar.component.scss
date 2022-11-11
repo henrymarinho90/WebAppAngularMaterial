@@ -3,6 +3,7 @@
   padding: 20px 0;
   transition: .3s;
   text-overflow: ellipsis;
+  width: 100% auto;
 
   &.nav-sticky {
     position: fixed;
@@ -50,11 +51,14 @@
 
     &:hover {
       background: #F1C855;
+      color:#121518;
+      border: 2px solid #ffffff;
     }
   }
 
   a {
     font-family: 'GeosansLight';
+    text-align: center;
   }
 }
 

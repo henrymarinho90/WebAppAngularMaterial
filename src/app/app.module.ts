@@ -19,14 +19,17 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TopbarComponent } from './components/topbar/topbar.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { TopbarComponent } from './Components/topbar/topbar.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { CarouselMainComponent } from './Components/carousel-main/carousel-main.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselMainComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
